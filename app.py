@@ -19,7 +19,7 @@ recognizer = sr.Recognizer()
 # FUNCTION DEFINITIONS
 # --------------------------
 
-def get_ai_response(prompt):a
+def get_ai_response(prompt):
     model = genai.GenerativeModel(model_name)
     contents = [{"role": "user", "parts": [{"text": prompt}]}]
     response = model.generate_content(contents=contents)
